@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dtapps.sugarcop.AddEditActivity"
+    tools:showIn="@layout/activity_add_edit"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/adView_add_edit"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/AddEdit.TextTitle"
+                    android:id="@+id/add_edit_tv_validation"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/string_add_edit_addition_text" />
+
+                <LinearLayout
+                    android:id="@+id/add_edit_ll_all_til"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/AddEdit.TextInputLayout"
+                        android:id="@+id/add_edit_til_name"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:theme="@style/AddEdit.TextInputLayout"
+                        app:errorTextAppearance="@style/AddEdit.TextInputLayout.ErrorStyle"
+                        app:hintTextAppearance="@style/AddEdit.TextInputLayout.FocusedHint"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <EditText
+                            android:id="@+id/add_edit_et_name"
+                            style="@style/AddEdit.TextInputEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/string_add_edit_name"
+                            android:maxLines="1"
+                            android:inputType="textPersonName"
+                            android:nextFocusDown="@id/add_edit_et_brand"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/add_edit_til_brand"
+                        style="@style/AddEdit.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/AddEdit.TextInputLayout"
+                        app:errorTextAppearance="@style/AddEdit.TextInputLayout.ErrorStyle"
+                        app:hintTextAppearance="@style/AddEdit.TextInputLayout.FocusedHint"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/add_edit_til_name">
+
+                        <EditText
+                            android:id="@+id/add_edit_et_brand"
+                            style="@style/AddEdit.TextInputEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/string_add_edit_brand"
+                            android:maxLines="1"
+                            android:inputType="text"
+                            android:nextFocusDown="@id/add_edit_et_barcode" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/add_edit_til_barcode"
+                        style="@style/AddEdit.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/AddEdit.TextInputLayout"
+                        app:errorTextAppearance="@style/AddEdit.TextInputLayout.ErrorStyle"
+                        app:hintTextAppearance="@style/AddEdit.TextInputLayout.FocusedHint"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/add_edit_til_brand">
+
+                        <EditText
+                            android:id="@+id/add_edit_et_barcode"
+                            style="@style/AddEdit.TextInputEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/string_add_edit_barcode"
+                            android:maxLines="1"
+                            android:inputType="text"
+                            android:maxLength="32"
+                            android:nextFocusDown="@id/add_edit_et_sugar_per_100"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/add_edit_til_sugar_per_100"
+                        style="@style/AddEdit.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/AddEdit.TextInputLayout"
+                        app:errorTextAppearance="@style/AddEdit.TextInputLayout.ErrorStyle"
+                        app:hintTextAppearance="@style/AddEdit.TextInputLayout.FocusedHint"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/add_edit_til_barcode">
+
+                        <EditText
+                            android:id="@+id/add_edit_et_sugar_per_100"
+                            style="@style/AddEdit.TextInputEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/string_add_edit_sugar_100"
+                            android:maxLines="1"
+                            android:maxLength="8"
+                            android:inputType="numberDecimal"
+                            android:nextFocusDown="@id/add_edit_et_quantity_portion"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/add_edit_til_quantity_portion"
+                        style="@style/AddEdit.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/AddEdit.TextInputLayout"
+                        app:errorTextAppearance="@style/AddEdit.TextInputLayout.ErrorStyle"
+                        app:hintTextAppearance="@style/AddEdit.TextInputLayout.FocusedHint"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent">
+
+                        <EditText
+                            android:id="@+id/add_edit_et_quantity_portion"
+                            style="@style/AddEdit.TextInputEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/string_add_edit_quantity_portion"
+                            android:maxLines="1"
+                            android:imeOptions="actionDone"
+                            android:maxLength="8"
+                            android:inputType="numberDecimal"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/add_edit_rl_categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="12dp">
+                        <TextView
+                            android:id="@+id/add_edit_tv_categories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_add_edit_categories"
+                            android:textColor="@color/colorTextLightest"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentStart="true" />
+
+                        <ImageView
+                            android:id="@+id/add_edit_iv_drop_down"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/string_add_edit_content_desc_categories"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:src="@drawable/ic_down_arrow" />
+
+                        <TextView
+                            android:id="@+id/add_edit_tv_categories_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/add_edit_tv_categories"
+                            android:layout_toStartOf="@id/add_edit_iv_drop_down"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/colorTextDark" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/add_edit_divider_categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:theme="@style/AddEdit.Divider"/>
+
+                    <TextView
+                        android:id="@+id/add_edit_tv_categories_error"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="@string/string_add_edit_categories_error"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorLevelNine9"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_add_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTextLight"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-1585893575818828/4994218726"/>
+</android.support.constraint.ConstraintLayout>

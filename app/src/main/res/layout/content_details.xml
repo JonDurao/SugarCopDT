@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dtapps.sugarcop.DetailsActivity"
+    tools:showIn="@layout/activity_details">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/adView_details"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/details_cl_all"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:animateLayoutChanges="true"
+                android:paddingTop="24dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/details_cl_validation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:id="@+id/details_tv_validation"
+                        style="@style/Details.TextTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_details_validation"
+                        app:layout_constraintEnd_toEndOf="@id/details_cl_validation"
+                        app:layout_constraintLeft_toLeftOf="@id/details_cl_validation"
+                        app:layout_constraintRight_toRightOf="@id/details_cl_validation"
+                        app:layout_constraintStart_toStartOf="@id/details_cl_validation"
+                        app:layout_constraintTop_toTopOf="@id/details_cl_validation" />
+
+                    <TextView
+                        android:id="@+id/details_tv_confirm"
+                        style="@style/Details.DarkTextSubTitleTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_details_confirm"
+                        app:layout_constraintBottom_toTopOf="@id/details_ll_buttons"
+                        app:layout_constraintLeft_toLeftOf="@id/details_cl_validation"
+                        app:layout_constraintRight_toRightOf="@id/details_cl_validation"
+                        app:layout_constraintTop_toBottomOf="@id/details_tv_validation"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <LinearLayout
+                        android:id="@+id/details_ll_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toTopOf="@id/details_divider_buttons"
+                        app:layout_constraintLeft_toLeftOf="@id/details_cl_validation"
+                        app:layout_constraintRight_toRightOf="@id/details_cl_validation"
+                        app:layout_constraintTop_toBottomOf="@id/details_tv_confirm">
+
+                        <Button
+                            android:id="@+id/details_button_yes"
+                            style="@style/Details.FlatButton.Yes"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/string_details_yes"
+                            android:theme="@style/AppTheme.FlatButton.Yes" />
+
+                        <Button
+                            android:id="@+id/details_button_no"
+                            style="@style/Details.FlatButton.No"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/string_details_no"
+                            android:theme="@style/AppTheme.FlatButton.No" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/details_divider_buttons"
+                        style="@style/AppTheme.Divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        app:layout_constraintBottom_toBottomOf="@id/details_cl_validation"
+                        app:layout_constraintLeft_toLeftOf="@id/details_cl_validation"
+                        app:layout_constraintRight_toRightOf="@id/details_cl_validation"
+                        app:layout_constraintTop_toBottomOf="@id/details_ll_buttons" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/details_cl_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/details_cl_validation">
+
+                    <LinearLayout
+                        android:id="@+id/details_ll_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="24dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Details.DarkTextOne"
+                            android:id="@+id/details_tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_placeholder"
+                            app:layout_constraintEnd_toEndOf="@id/details_cl_data"
+                            app:layout_constraintLeft_toLeftOf="@id/details_cl_data"
+                            app:layout_constraintRight_toRightOf="@id/details_cl_data"
+                            app:layout_constraintStart_toStartOf="@id/details_cl_data"
+                            app:layout_constraintTop_toTopOf="@id/details_cl_data" />
+
+                        <TextView
+                            style="@style/Details.DarkTextTwo"
+                            android:id="@+id/details_tv_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_placeholder"
+                            app:layout_constraintEnd_toEndOf="@id/details_cl_data"
+                            app:layout_constraintLeft_toLeftOf="@id/details_cl_data"
+                            app:layout_constraintRight_toRightOf="@id/details_cl_data"
+                            app:layout_constraintStart_toStartOf="@id/details_cl_data"
+                            app:layout_constraintTop_toBottomOf="@id/details_tv_name" />
+
+                        <TextView
+                            style="@style/Details.DarkTextThree"
+                            android:id="@+id/details_tv_barcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_placeholder"
+                            app:layout_constraintEnd_toEndOf="@id/details_cl_data"
+                            app:layout_constraintLeft_toLeftOf="@id/details_cl_data"
+                            app:layout_constraintRight_toRightOf="@id/details_cl_data"
+                            app:layout_constraintStart_toStartOf="@id/details_cl_data"
+                            app:layout_constraintTop_toBottomOf="@id/details_tv_brand" />
+
+                        <TextView
+                            style="@style/Details.DarkTextFour"
+                            android:id="@+id/details_tv_categories"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_placeholder"
+                            app:layout_constraintEnd_toEndOf="@id/details_cl_data"
+                            app:layout_constraintLeft_toLeftOf="@id/details_cl_data"
+                            app:layout_constraintRight_toRightOf="@id/details_cl_data"
+                            app:layout_constraintStart_toStartOf="@id/details_cl_data"
+                            app:layout_constraintTop_toBottomOf="@id/details_tv_barcode" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/details_divider_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:theme="@style/AppTheme.Divider"
+                        app:layout_constraintLeft_toLeftOf="@id/details_cl_data"
+                        app:layout_constraintRight_toRightOf="@id/details_cl_data"
+                        app:layout_constraintTop_toBottomOf="@id/details_ll_data" />
+
+                    <LinearLayout
+                        android:id="@+id/details_ll_quantity_sugar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:paddingBottom="24dp"
+                        android:paddingTop="24dp"
+                        app:layout_constraintLeft_toLeftOf="@id/details_cl_data"
+                        app:layout_constraintRight_toRightOf="@id/details_cl_data"
+                        app:layout_constraintTop_toBottomOf="@id/details_divider_data">
+
+                        <LinearLayout
+                            android:id="@+id/details_ll_sugar_portion"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/details_tv_sugar_portion_text"
+                                style="@style/Details.DarkTextFive"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_placeholder" />
+
+                            <TextView
+                                android:id="@+id/details_tv_sugar_portion_value"
+                                style="@style/Details.DarkTextSix"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_placeholder" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/details_ll_sugar_hundred"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/Details.DarkTextFive"
+                                android:id="@+id/details_tv_sugar_hundred_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/details_quantity_hundred" />
+
+                            <TextView
+                                style="@style/Details.DarkTextSix"
+                                android:id="@+id/details_tv_sugar_hundred_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_placeholder"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/details_divider_data_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:theme="@style/AppTheme.Divider"
+                        app:layout_constraintLeft_toLeftOf="@id/details_cl_data"
+                        app:layout_constraintRight_toRightOf="@id/details_cl_data"
+                        app:layout_constraintTop_toBottomOf="@id/details_ll_quantity_sugar" />
+
+                    <LinearLayout
+                        android:id="@+id/details_ll_progress_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="24dp"
+                        android:paddingTop="24dp"
+                        app:layout_constraintLeft_toLeftOf="@id/details_cl_data"
+                        app:layout_constraintRight_toRightOf="@id/details_cl_data"
+                        app:layout_constraintTop_toBottomOf="@id/details_divider_data_end">
+
+                        <TextView
+                            style="@style/Details.DarkTextSeven"
+                            android:id="@+id/details_tv_sugar_progress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_details_impact" />
+
+                        <ProgressBar
+                            android:id="@+id/details_pr_sugar"
+                            style="@style/AppTheme.LinearProgress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/AppTheme.LinearProgress" />
+                    </LinearLayout>
+                </android.support.constraint.ConstraintLayout>
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTextLight"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-1585893575818828/4994218726"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/intro_ll_slide_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_slider_screen2"
+    android:orientation="vertical"
+    android:theme="@style/AppIntro"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <TextView
+        style="@style/AppIntro.SlideSubtitle"
+        android:id="@+id/intro_tv_slide_two_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:contentDescription="@string/string_intro_user_info"
+        android:text="@string/string_intro_user_info" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/AppIntro.TextInputLayout"
+            android:id="@+id/intro_til_slide_two_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppIntro.TextInputLayout"
+            android:nextFocusDown="@id/intro_til_slide_two_surname"
+            app:hintTextAppearance="@style/AppIntro.TextInputLayout.FocusedHint"
+            app:errorTextAppearance="@style/AppIntro.TextInputLayout.ErrorStyle">
+
+            <EditText
+                android:id="@+id/intro_et_slide_two_name"
+                style="@style/AppIntro.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:inputType="textPersonName"
+                android:maxLength="24"
+                android:hint="@string/string_intro_info_name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/AppIntro.TextInputLayout"
+            android:theme="@style/AppIntro.TextInputLayout"
+            android:id="@+id/intro_til_slide_two_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/AppIntro.TextInputLayout.FocusedHint"
+            app:errorTextAppearance="@style/AppIntro.TextInputLayout.ErrorStyle"
+            >
+
+            <EditText
+                style="@style/AppIntro.TextInputEditText"
+                android:id="@+id/intro_et_slide_two_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:inputType="textPersonName"
+                android:maxLength="24"
+                android:hint="@string/string_intro_info_surname" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/AppIntro.TextInputLayout"
+            android:theme="@style/AppIntro.TextInputLayout"
+            android:id="@+id/intro_til_slide_two__username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/AppIntro.TextInputLayout.FocusedHint"
+            app:errorTextAppearance="@style/AppIntro.TextInputLayout.ErrorStyle">
+
+            <EditText
+                style="@style/AppIntro.TextInputEditText"
+                android:id="@+id/intro_et_slide_two_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:inputType="text"
+                android:maxLength="24"
+                android:hint="@string/string_intro_info_username" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/AppIntro.TextInputLayout"
+            android:theme="@style/AppIntro.TextInputLayout"
+            android:id="@+id/intro_til_slide_two__age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/AppIntro.TextInputLayout.FocusedHint"
+            app:errorTextAppearance="@style/AppIntro.TextInputLayout.ErrorStyle">
+
+            <EditText
+                style="@style/AppIntro.TextInputEditText"
+                android:id="@+id/intro_et_slide_two_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="2"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:hint="@string/string_intro_info_age" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</LinearLayout>

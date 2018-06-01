@@ -1,0 +1,597 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Divider" parent="Theme.AppCompat.Light">
+        <item name="android:alpha">0.75</item>
+        <item name="android:background">@color/colorDividerLight</item>
+    </style>
+
+    <style name="AppIntro" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppIntro.Button" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/colorButtonIntroLight</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="AppIntro.Divider" parent="Theme.AppCompat.Light">
+        <item name="android:alpha">0.5</item>
+        <item name="android:background">@color/colorDividerIntroLight</item>
+    </style>
+
+    <style name="AppIntro.RadioButton" parent="Base.TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/colorAccentDark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <style name="AppIntro.RadioGroupText" parent="Base.TextAppearance.AppCompat.Medium">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorAccentDark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="AppIntro.Switch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="switchPadding">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+    </style>
+
+    <style name="AppIntro.SwitchTheme">
+        <item name="thumbTint">@color/intro_switch_color</item>
+        <item name="trackTint">@color/colorAccentDarkTrackSwitch</item>
+    </style>
+
+    <style name="AppIntro.TextInputLayout">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColorHint">@color/colorAccentLight</item>
+        <item name="colorControlNormal">@color/colorAccentLight</item>
+        <item name="colorControlActivated">@color/colorPrimaryLight</item>
+        <item name="colorControlHighlight">@color/colorPrimaryLight</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimaryAccent</item>
+        <item name="colorControlHighlight">@color/colorPrimaryLight</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout.FocusedHint" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout.ErrorStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorLevelNine</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppIntro.TextInputLayout.ErrorStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.LinearProgress" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:indeterminate">false</item>
+        <item name="android:progressBackgroundTint">@color/colorPrimary</item>
+        <item name="android:progressTint">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.FlatButton.Yes" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.FlatButton.No" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorAccentDark</item>
+    </style>
+
+    <style name="AppIntro.TextInputLayoutThree" parent="AppIntro.TextInputLayout">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColorHint">@color/colorAccentDark</item>
+        <item name="colorControlNormal">@color/colorAccentDark</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+    </style>
+
+    <style name="AppIntro.TextInputLayout.FocusedHint" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="AppIntro.TextInputLayoutThree.FocusedHint" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppIntro.TextInputEditText">
+        <item name="android:textColor">@color/colorTextWhite</item>
+    </style>
+
+    <style name="AppTheme.TextInputEditText" parent="AppIntro.TextInputEditText">
+        <item name="android:textColor">@color/colorTextDark</item>
+    </style>
+
+    <style name="AppIntro.TextInputEditTextThree" parent="AppIntro.TextInputEditText">
+        <item name="android:textColor">@color/colorTextDark</item>
+    </style>
+
+    <style name="AppIntro.SlideTitle" parent="AppIntro">
+        <item name="android:gravity">center|bottom</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingTop">80dp</item>
+        <item name="android:textAppearance">@style/AppIntro.WhiteTextTitle</item>
+    </style>
+
+    <style name="AppIntro.SlideSubtitle" parent="AppIntro">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:textAppearance">@style/AppIntro.WhiteTextSubTitle</item>
+    </style>
+
+    <style name="AppIntro.SlideSubtitleDark" parent="AppIntro">
+        <item name="android:gravity">center|bottom</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:textAppearance">@style/AppIntro.DarkTextSubTitle</item>
+    </style>
+
+    <style name="AppIntro.WhiteTextTitle" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorTextWhite</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppIntro.DarkTextSubTitle" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppIntro.WhiteTextSubTitle" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorTextWhite</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppIntro.DarkTextBody" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppIntro.ItemTextTitle" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="AppIntro.ItemTextSubtitle" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="AppIntro.ItemTextValue" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="AppTheme.DarkTextSubTitle" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="IntroWhiteText" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorTextWhite</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AddEdit.Divider" parent="Theme.AppCompat.Light">
+        <item name="android:background">@color/colorTextLightest</item>
+    </style>
+
+    <style name="AddEdit.TextTitle" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AddEdit.TextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColorHint">@color/colorTextLightest</item>
+        <item name="colorControlNormal">@color/colorTextLightest</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccentLight</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+    </style>
+
+    <style name="AddEdit.TextInputLayout.FocusedHint" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AddEdit.TextInputLayout.ErrorStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorLevelNine9</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AddEdit.TextInputEditText" parent="AppIntro.TextInputEditText">
+        <item name="android:textColor">@color/colorTextDark</item>
+    </style>
+
+    <style name="Details.TextTitle" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorAccentExtraDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+    </style>
+
+    <style name="Details.DarkTextSubTitle" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="Details.DarkTextSubTitleTwo" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorAccentExtraDarkA</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="Details.DarkTextOne" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Details.DarkTextTwo" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Details.DarkTextThree" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Details.DarkTextFour" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Details.DarkTextFive" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Details.DarkTextSix" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Details.DarkTextSeven" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Details.FlatButton.Yes" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/colorSi</item>
+    </style>
+
+    <style name="Details.FlatButton.No" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="colorControlHighlight">@color/colorAccentDark</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/colorNo</item>
+    </style>
+
+    <style name="Settings.TitleText" parent="Base.TextAppearance.AppCompat">
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AddEdit.SubtitleText" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Settings.SubtitleText" parent="Base.TextAppearance.AppCompat">
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingStart">32dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Settings.Til" parent="Widget.Design.TextInputLayout">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="Settings.Tiet" parent="AppIntro.TextInputEditText">
+        <item name="android:textColor">@color/colorTextDark</item>
+    </style>
+
+    <style name="About.normalText" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="About.Artist" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="About.Licence" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorLink">@null</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

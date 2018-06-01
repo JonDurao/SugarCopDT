@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dtapps.sugarcop"
+    android:versionCode="1"
+    android:versionName="1.0 Apolo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_main_donut"
+        android:roundIcon="@drawable/ic_main_donut"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <provider
+            android:name="com.dtapps.sugarcop.Provider"
+            android:authorities="com.dtapps.sugarcop.provider"
+            android:exported="false" />
+
+        <activity
+            android:name="com.dtapps.sugarcop.MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.dtapps.sugarcop.IntroActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:parentActivityName="com.dtapps.sugarcop.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dtapps.sugarcop.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.dtapps.sugarcop.DetailsActivity"
+            android:label="@string/title_activity_details"
+            android:launchMode="singleInstance"
+            android:parentActivityName="com.dtapps.sugarcop.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dtapps.sugarcop.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.dtapps.sugarcop.AddEditActivity"
+            android:label="@string/title_activity_add_edit"
+            android:parentActivityName="com.dtapps.sugarcop.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dtapps.sugarcop.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.dtapps.sugarcop.AllProductsActivity"
+            android:label="All Products"
+            android:parentActivityName="com.dtapps.sugarcop.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dtapps.sugarcop.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.dtapps.sugarcop.HistoryActivity"
+            android:label="@string/title_activity_history"
+            android:parentActivityName="com.dtapps.sugarcop.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dtapps.sugarcop.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.dtapps.sugarcop.SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName="com.dtapps.sugarcop.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dtapps.sugarcop.MainActivity" />
+
+        </activity>
+    </application>
+
+</manifest>

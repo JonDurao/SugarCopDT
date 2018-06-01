@@ -1,0 +1,264 @@
+<resources>
+    <string name="action_search" translatable="false">Search</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="app_name" translatable="false">Sugar Cop</string>
+    <string name="details_quantity_hundred">Per 100gr</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="search_hint">Search products</string>
+    <string name="string_about_four">Icons used come from\n\nhttps://www.flaticon.com\n\nCreated by the following artist</string>
+    <string name="string_about_licence">Licensed by CC 3.0 BY</string>
+    <string name="string_about_one">This app was developed independently by a lonely developer so any comments on it are appreciated.</string>
+    <string name="string_about_three">Contact me in the following email with suggestions for new products or features</string>
+    <string name="string_about_two">The code is available for you to check and use in this link</string>
+    <string name="string_add_edit_add_success">Product added to the database</string>
+    <string name="string_add_edit_addition_text">Please, add the following info about the product</string>
+    <string name="string_add_edit_barcode">Barcode</string>
+    <string name="string_add_edit_brand">Brand</string>
+    <string name="string_add_edit_brand_error">Please add the brand of the product</string>
+    <string name="string_add_edit_categories">Categories</string>
+    <string name="string_add_edit_categories_error">Please select a category for the product</string>
+    <string name="string_add_edit_editing_text">Please, edit the info you want to change</string>
+    <string name="string_add_edit_menu_add">Add a new product</string>
+    <string name="string_add_edit_name">Name</string>
+    <string name="string_add_edit_name_error">Please add the name for the product</string>
+    <string name="string_add_edit_quantity">Total quantity of the product</string>
+    <string name="string_add_edit_quantity_portion">Serving size (Gr)</string>
+    <string name="string_add_edit_quantity_portion_error">Please add the serving size of the product</string>
+    <string name="string_add_edit_success">Product edited correctly</string>
+    <string name="string_add_edit_sugar_100">Sugar per 100gr</string>
+    <string name="string_add_edit_sugar_hundred_error">Please add the sugar in the product</string>
+    <string name="string_add_product_toolbar_title">Product form</string>
+    <string name="string_add_user_info_header">Please give us some information about yourself</string>
+    <string name="string_all_product_toolbar_title">All Products</string>
+    <string name="string_button_back">Go Back</string>
+    <string name="string_button_cancel">Cancel</string>
+    <string name="string_button_continue">Finish</string>
+    <string name="string_button_ok">Ok</string>
+    <string name="string_category_0">Condiments \u0026 salad dressings</string>
+    <string name="string_category_1">Baby foods</string>
+    <string name="string_category_10">Fruits \u0026 vegetables</string>
+    <string name="string_category_11">Nuts, seeds \u0026 dried fruit</string>
+    <string name="string_category_12">Herbs, Spices \u0026 Seasonings</string>
+    <string name="string_category_13">Eggs \u0026 Egg Substitutes</string>
+    <string name="string_category_14">Dairy \u0026 cheese</string>
+    <string name="string_category_15">Dried Beans, Grains \u0026 Rice</string>
+    <string name="string_category_16">Jams, Jellies \u0026 Sweet Spreads</string>
+    <string name="string_category_17">Olives, Pickles \u0026 Relishes</string>
+    <string name="string_category_18">Breads \u0026 Bakery</string>
+    <string name="string_category_19">Pasta \u0026 Noodles</string>
+    <string name="string_category_2">Snack foods</string>
+    <string name="string_category_20">Prepared \u0026 frozen foods</string>
+    <string name="string_category_21">Cooking \u0026 Baking</string>
+    <string name="string_category_22">Sauces, gravies \u0026 Marinades</string>
+    <string name="string_category_23">Recipes</string>
+    <string name="string_category_3">Beverages</string>
+    <string name="string_category_4">Meat \u0026 seafood</string>
+    <string name="string_category_5">Breakfast foods</string>
+    <string name="string_category_6">Beer, cider \u0026 spirits</string>
+    <string name="string_category_7">Canned, jarred \u0026 packaged foods</string>
+    <string name="string_category_8">Dietary supplements</string>
+    <string name="string_category_9">Candy \u0026 chocolate</string>
+    <string name="string_common_adapter_alphabet" translatable="false">ABCDEFGHIJKLMNOPQRTSUVWXYZ</string>
+    <string name="string_common_delete_list_cancel">Cancel</string>
+    <string name="string_common_delete_list_message">Would you like to delete this item from todays list?</string>
+    <string name="string_common_delete_list_ok">Ok</string>
+    <string name="string_common_delete_list_removed">Removed\u00A0</string>
+    <string name="string_common_delete_list_removed_rest">gr from today\'s intake</string>
+    <string name="string_common_delete_list_title">Warning</string>
+    <string name="string_details_common_gr" translatable="false">gr</string>
+    <string name="string_details_confirm">Can you confirm the data is correct?</string>
+    <string name="string_details_confirm_edit">Could you please edit the product adding the missing info?</string>
+    <string name="string_details_impact">Impact of this item in you daily intake</string>
+    <string name="string_details_message_added">Added\u00A0</string>
+    <string name="string_details_message_added_rest">gr to your current intake</string>
+    <string name="string_details_no">NO</string>
+    <string name="string_details_portion_message">Per portion (</string>
+    <string name="string_details_portion_message_rest" translatable="false">gr)</string>
+    <string name="string_details_portion_nogr_message">Per portion</string>
+    <string name="string_details_validation">This product has not been validated by the community</string>
+    <string name="string_details_validation_edit">We are missing some details on this one :(</string>
+    <string name="string_details_yes">YES</string>
+    <string name="string_divider" translatable="false">Divider</string>
+    <string name="string_history_label_x">Sugar</string>
+    <string name="string_history_toolbar_title">History</string>
+    <string name="string_history_week">Week\u00A0</string>
+    <string name="string_intent_caller_activity" translatable="false">Caller</string>
+    <string name="string_intent_food_bundle" translatable="false">FoodBundle</string>
+    <string name="string_intro_hint_height">Height (</string>
+    <string name="string_intro_hint_weight">Weight (</string>
+    <string name="string_intro_info_age">Age</string>
+    <string name="string_intro_info_female">Female</string>
+    <string name="string_intro_info_genre">Genre</string>
+    <string name="string_intro_info_male">Male</string>
+    <string name="string_intro_info_name">Name</string>
+    <string name="string_intro_info_surname">Surname</string>
+    <string name="string_intro_info_username">Username</string>
+    <string name="string_intro_switch_height_cd">Height Unit</string>
+    <string name="string_intro_switch_height_cm" translatable="false">Cm</string>
+    <string name="string_intro_switch_height_ft" translatable="false">Ft</string>
+    <string name="string_intro_switch_height_in" translatable="false">In</string>
+    <string name="string_intro_switch_unit_cd">Unit system</string>
+    <string name="string_intro_switch_unit_im">Imperial</string>
+    <string name="string_intro_switch_unit_me">Metric</string>
+    <string name="string_intro_switch_weight_cd">Weight Unit</string>
+    <string name="string_intro_switch_weight_kg" translatable="false">Kg</string>
+    <string name="string_intro_switch_weight_lb" translatable="false">Lb</string>
+    <string name="string_intro_user_data">…And to finish off, some (optional) details about your body!</string>
+    <string name="string_intro_user_info">Please give us some info about yourself!</string>
+    <string name="string_intro_welcome">Welcome to Sugar Cop!</string>
+    <string name="string_key_first_run" translatable="false">FirstRun</string>
+    <string name="string_key_first_run_main_screen" translatable="false">FirstRunMainScreen</string>
+    <string name="string_main_about">About the app...</string>
+    <string name="string_main_drawer_about">About</string>
+    <string name="string_main_drawer_all">All products</string>
+    <string name="string_main_drawer_credits">Credits</string>
+    <string name="string_main_drawer_history">History</string>
+    <string name="string_main_drawer_settings">Settings</string>
+    <string name="string_main_empty_text">Start adding things to the list!</string>
+    <string name="string_main_levels_1">Perfect! (ﾉ･o･)ﾉ</string>
+    <string name="string_main_levels_2">You\'re so close... ╮(╯_╰)╭</string>
+    <string name="string_main_levels_3">Over the edge (ㄒoㄒ)</string>
+    <string name="string_main_levels_4">Welcome...to the dark side (◣_◢)</string>
+    <string name="string_main_number_times">\u00A0of the day)</string>
+    <string name="string_main_ring_subtitle">gr of sugar out of\u00A0</string>
+    <string name="string_menu_add_edit_confirm">Confirm</string>
+    <string name="string_month_1">January</string>
+    <string name="string_month_10">October</string>
+    <string name="string_month_11">November</string>
+    <string name="string_month_12">December</string>
+    <string name="string_month_2">February</string>
+    <string name="string_month_3">March</string>
+    <string name="string_month_4">April</string>
+    <string name="string_month_5">May</string>
+    <string name="string_month_6">June</string>
+    <string name="string_month_7">July</string>
+    <string name="string_month_8">August</string>
+    <string name="string_month_9">September</string>
+    <string name="string_period_7_days">Last 7 days</string>
+    <string name="string_period_month">Monthly</string>
+    <string name="string_period_week">Weekly</string>
+    <string name="string_period_year">Yearly</string>
+    <string name="string_placeholder" translatable="false">PLACEHOLDER</string>
+    <string name="string_regex_space" translatable="false">\u00A0</string>
+    <string name="string_settings_age">Age</string>
+    <string name="string_settings_body">Body</string>
+    <string name="string_settings_height">Height (cm)</string>
+    <string name="string_settings_info">Information</string>
+    <string name="string_settings_maximun_sugar">Maximun Sugar</string>
+    <string name="string_settings_name">Name</string>
+    <string name="string_settings_number" translatable="false">Number</string>
+    <string name="string_settings_number_decimal" translatable="false">NumberDecimal</string>
+    <string name="string_settings_string" translatable="false">String</string>
+    <string name="string_settings_subtitle">Please confirm your\u00A0</string>
+    <string name="string_settings_sugar">Sugar</string>
+    <string name="string_settings_surname">Surname</string>
+    <string name="string_settings_toolbar_title">Settings</string>
+    <string name="string_settings_weight">Weight (Kg)</string>
+    <string name="string_shared_preferences_name" translatable="false">USER_DATA</string>
+    <string name="string_shared_preferences_user_added" translatable="false">USER_ADDED</string>
+    <string name="string_shared_preferences_user_age" translatable="false">USER_AGE</string>
+    <string name="string_shared_preferences_user_date" translatable="false">USER_DATE</string>
+    <string name="string_shared_preferences_user_genre" translatable="false">USER_GENRE</string>
+    <string name="string_shared_preferences_user_height" translatable="false">USER_HEIGHT</string>
+    <string name="string_shared_preferences_user_name" translatable="false">USER_NAME</string>
+    <string name="string_shared_preferences_user_recent" translatable="false">USER_RECENT</string>
+    <string name="string_shared_preferences_user_sugar" translatable="false">USER_SUGAR</string>
+    <string name="string_shared_preferences_user_sugar_per_day" translatable="false">USER_SUGAR_PER_DAY</string>
+    <string name="string_shared_preferences_user_surname" translatable="false">USER_SURNAME</string>
+    <string name="string_shared_preferences_user_unit" translatable="false">USER_UNIT</string>
+    <string name="string_shared_preferences_user_username" translatable="false">USER_USERNAME</string>
+    <string name="string_shared_preferences_user_weight" translatable="false">USER_WEIGHT</string>
+    <string name="string_sugar_percentage" translatable="false">Sugar Percentage</string>
+    <string name="string_til_error_age">Please insert your age</string>
+    <string name="string_til_error_name">Please insert a name</string>
+    <string name="string_til_error_surname">Please insert a surname</string>
+    <string name="string_til_error_username">Please insert a username</string>
+    <string name="string_unit_hint_cm">Centimeters</string>
+    <string name="string_unit_hint_ft">Feet</string>
+    <string name="string_unit_hint_in">Inches</string>
+    <string name="string_unit_hint_kg">Kilograms</string>
+    <string name="string_unit_hint_lb">Pounds</string>
+    <string name="strings_intro_units_text">Unit system</string>
+    <string name="title_activity_add_edit" translatable="false">AddEditActivity</string>
+    <string name="title_activity_details" translatable="false">DetailsActivity</string>
+    <string name="title_activity_history" translatable="false">HistoryActivity</string>
+    <string name="string_add_edit_content_desc_categories">Categories Dropdown</string>
+    <string name="string_main_content_description_empty_list">Empty Added List</string>
+    <string name="string_about_freepik" translatable="false">Freepik: https://www.freepik.com</string>
+    <string name="string_about_smash" translatable="false">Smashicons: https://www.flaticon.com/authors/smashicons</string>
+    <string name="string_about_licence_cc" translatable="false">http://creativecommons.org/licenses/by/3.0/</string>
+    <string name="string_about_cd_icon">Icon</string>
+    <string name="string_about_wip" translatable="false">WIP</string>
+    <string name="string_about_protonmail" translatable="false">dtapps@protonmail.com</string>
+    <string name="string_tutorial_message_main_search">Search for products already present in our database</string>
+    <string name="string_tutorial_message_main_fab">Add new items to ones we have</string>
+    <string name="string_tutorial_message_main_menu">Open the menu on the left to check out other parts of the app</string>
+
+
+    <string-array name="periods_array">
+        <item>@string/string_period_7_days</item>
+        <item>@string/string_period_week</item>
+        <item>@string/string_period_month</item>
+        <item>@string/string_period_year</item>
+    </string-array>
+
+    <string-array name="months_array">
+        <item>@string/string_month_1</item>
+        <item>@string/string_month_2</item>
+        <item>@string/string_month_3</item>
+        <item>@string/string_month_4</item>
+        <item>@string/string_month_5</item>
+        <item>@string/string_month_6</item>
+        <item>@string/string_month_7</item>
+        <item>@string/string_month_8</item>
+        <item>@string/string_month_9</item>
+        <item>@string/string_month_10</item>
+        <item>@string/string_month_11</item>
+        <item>@string/string_month_12</item>
+    </string-array>
+
+    <string-array name="categories_array">
+        <item>@string/string_category_0</item>
+        <item>@string/string_category_1</item>
+        <item>@string/string_category_2</item>
+        <item>@string/string_category_3</item>
+        <item>@string/string_category_4</item>
+        <item>@string/string_category_5</item>
+        <item>@string/string_category_6</item>
+        <item>@string/string_category_7</item>
+        <item>@string/string_category_8</item>
+        <item>@string/string_category_9</item>
+        <item>@string/string_category_10</item>
+        <item>@string/string_category_11</item>
+        <item>@string/string_category_12</item>
+        <item>@string/string_category_13</item>
+        <item>@string/string_category_14</item>
+        <item>@string/string_category_15</item>
+        <item>@string/string_category_16</item>
+        <item>@string/string_category_17</item>
+        <item>@string/string_category_18</item>
+        <item>@string/string_category_19</item>
+        <item>@string/string_category_20</item>
+        <item>@string/string_category_21</item>
+        <item>@string/string_category_22</item>
+        <item>@string/string_category_23</item>
+    </string-array>
+
+    <string-array name="UserProperties">
+        <item>@string/string_shared_preferences_user_name</item>
+        <item>@string/string_shared_preferences_user_surname</item>
+        <item>@string/string_shared_preferences_user_username</item>
+        <item>@string/string_shared_preferences_user_genre</item>
+        <item>@string/string_shared_preferences_user_age</item>
+        <item>@string/string_shared_preferences_user_height</item>
+        <item>@string/string_shared_preferences_user_weight</item>
+        <item>@string/string_shared_preferences_user_sugar</item>
+        <item>@string/string_shared_preferences_user_sugar_per_day</item>
+        <item>@string/string_shared_preferences_user_unit</item>
+        <item>@string/string_shared_preferences_user_date</item>
+        <item>@string/string_shared_preferences_user_recent</item>
+        <item>@string/string_shared_preferences_user_added</item>
+    </string-array>
+</resources>

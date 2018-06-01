@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#26C6DA</color>
+    <color name="colorPrimaryAccent">#00E5FF</color>
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="colorPrimaryExtraDark">#006064</color>
+    <color name="colorPrimaryLight">#B2EBF2</color>
+    <!--<color name="colorAccent">#F50057</color>-->
+    <color name="colorAccent">#E91E63</color>
+    <color name="colorAccentTrasparent">#20E91E63</color>
+    <color name="colorAccent20Trasparent">#b4e91e63</color>
+    <color name="colorAccentDark">#C2185B</color>
+    <color name="colorAccentExtraDark">#880E4F</color>
+    <color name="colorAccentExtraDarkTrasparent">#dc880e4f</color>
+    <color name="colorAccentExtraDarkA">#C51162</color>
+    <color name="colorAccentLight">#F8BBD0</color>
+    <color name="colorAccentLightest">#FCE4EC</color>
+    <color name="colorBackground">#FAFAFA</color>
+    <color name="colorButtonIntroLight">#FFFFFF</color>
+    <color name="colorDividerIntroLight">#FFFFFF</color>
+    <color name="colorDividerLight">#BDBDBD</color>
+    <color name="colorTextDark">#212121</color>
+    <color name="colorTextLight">#757575</color>
+    <color name="colorTextLightest">#9E9E9E</color>
+    <color name="colorTextWhite">#FAFAFA</color>
+    <color name="colorTextHint">#B2EBF2</color>
+    <color name="colorTextHintAccent">#F8BBD0</color>
+    <color name="colorAccentDarkTrackSwitch">#66C2185B</color>
+
+    <color name="colorLevelTen10">#C62828</color>
+    <color name="colorLevelNine9">#F44336</color>
+    <color name="colorLevelEight8">#FF5722</color>
+    <color name="colorLevelSeven7">#F57C00</color>
+    <color name="colorLevelSix6">#FF9800</color>
+    <color name="colorLevelFive5">#FFA000</color>
+    <color name="colorLevelFour4">#FFEB3B</color>
+    <color name="colorLevelThree3">#CDDC39</color>
+    <color name="colorLevelTwo2">#8BC34A</color>
+    <color name="colorLevelOne1">#4CAF50</color>
+
+    <color name="colorLevelTen">#E91E63</color>
+    <color name="colorLevelNine">#EC407A</color>
+    <color name="colorLevelEight">#F06292</color>
+    <color name="colorLevelSeven">#F8BBD0</color>
+    <color name="colorLevelSix">#FCE4EC</color>
+    <color name="colorLevelFive">#E0F7FA</color>
+    <color name="colorLevelFour">#80DEEA</color>
+    <color name="colorLevelThree">#4DD0E1</color>
+    <color name="colorLevelTwo">#26C6DA</color>
+    <color name="colorLevelOne">#00BCD4</color>
+
+    <color name="colorNo">#F44336</color>
+    <color name="colorSi">#4CAF50</color>
+
+    <!-- Screens background color-->
+    <color name="bg_slider_screen1">@color/colorAccentExtraDark</color>
+    <color name="bg_slider_screen2">@color/colorAccent</color>
+    <color name="bg_slider_screen3">@color/colorAccentLight</color>
+    <!-- dots active colors -->
+    <color name="dot_active_screen1">@color/colorPrimaryDark</color>
+    <color name="dot_active_screen2">@color/colorPrimaryDark</color>
+    <color name="dot_active_screen3">@color/colorPrimaryDark</color>
+    <!-- dots inactive colors -->
+    <color name="dot_inactive_screen1">@color/colorPrimaryLight</color>
+    <color name="dot_inactive_screen2">@color/colorPrimaryLight</color>
+    <color name="dot_inactive_screen3">@color/colorPrimaryLight</color>
+
+    <array name="array_dot_screens">
+        <item>@color/bg_slider_screen1</item>
+        <item>@color/bg_slider_screen2</item>
+        <item>@color/bg_slider_screen3</item>
+    </array>
+
+    <array name="array_dot_active">
+        <item>@color/dot_active_screen1</item>
+        <item>@color/dot_active_screen2</item>
+        <item>@color/dot_active_screen3</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_inactive_screen1</item>
+        <item>@color/dot_inactive_screen2</item>
+        <item>@color/dot_inactive_screen3</item>
+    </array>
+</resources>
